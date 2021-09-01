@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./color-wheel.png">
+    <title>Random Color - twoColor linear gradient</title>
+</head>
+<body>
+  <div class="container">
+    <div class="hex-colors">
+      <h1 style="animation: animationColor 5s infinite alternate;">CLICK THE BUTTON BELLOW TO GENERATE A RANDOM GRADIENT HEX COLOR COMBINATION</h1>
+        <p style="animation: animationColor 5s infinite alternate;">background: linear-gradient(90deg,#<span id="hexcode1">ffffff</span> 0%, #<span id="hexcode2">ffffff</span> 50%, #<span id="hexcode3">ffffff</span> 100%); <img src="./copy.png" alt=""></p>
+      <button onclick="changeColor()" class="button-54" role="button">Change<img src="./click.png" alt=""></button>
+      <a class="button-54 back-btn" role="button" href="./index.html"><img src="./back.png" alt="back"></a>
+    </div>
+  </div>
+</body>
+<script src="./script/threecolor.js"></script>
+</html>

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap');
+
+
+html{
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Barlow', sans-serif; */
+  font-family: 'Fraunces', serif;
+  background-color: #d9d9d9;
+background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  
+}
+a{
+  text-decoration: none;
+  outline: none;
+  color:#17181a ;
+   margin : 0.6rem;
+}
+a:active, a:focus { 
+  outline: none; 
+ }
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 3.6rem);
+  width: 95%;
+  margin: 1.8rem auto;
+  
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+.back-btn{
+  margin: 1rem !important;
+  background-color: white!important;
+}
+.back-btn img{
+  width: 30px !important;
+  height: 30px !important;
+}
+.hex-colors{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hex-colors h1{
+  padding: 0 0.4rem;
+  text-transform: uppercase;
+  animation: colorchange 5s infinite alternate;
+}
+.hex-colors h2{
+  margin: 1rem 0;
+}
+.hex-colors p{
+  display: inline;
+  margin: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Barlow', sans-serif;
+  animation: colorchange 5s infinite alternate;
+
+}
+.hex-colors p img{
+  width: 20px;
+  height: 20px;
+  display: inline;
+  margin-left: 0.4rem;
+  cursor: pointer;
+}
+.btn-group{
+  display: flex;
+}
+@keyframes colorchange {
+  0%{
+    color: rgb(85, 91, 255);
+  }
+  20%{
+    color: rgb(31, 193, 27);
+  }
+  40%{
+    color: rgb(255, 217, 19);
+  }
+  60%{
+    color: rgb(255, 156, 85);
+  }
+  80%{
+    color: rgb(255, 85, 85);
+  }
+  100%{
+    color: rgb(255, 0, 221);
+  }
+}
+
+@keyframes animationColor {
+  0% {
+      color: #ffffff;
+    }
+    
+    20% {
+      color: #cccccc;
+    }
+    
+    40% {
+      color: #999999;
+    }
+    
+    60% {
+      color: #666666;
+    }
+    
+    80% {
+      color: #333333;
+    }
+    
+    100% {
+      color: #ffffff;
+    }  
+}
+img{
+  width: 35%;
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+/* CSS */
+.button-54 {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  margin: 0 0.4rem;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-items: center;
+  display: flex;
+}
+.button-54 img{
+  width: 20px;
+  height: 20px;
+}
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .hex-colors h1{
+    font-size: 1rem;
+  }
+  .hex-colors p{
+    margin: 1.2rem;
+    font-size: 0.8rem;
+  }
+}
