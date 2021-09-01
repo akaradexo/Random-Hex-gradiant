@@ -179,7 +179,11 @@ a:active, a:focus {
 
 }
 @media (max-width: 768px) {
- 
+ .container{
+  min-height: calc(100vh - 2.4rem);
+  width: 90%;
+  margin: 1.2rem auto;
+ }
   .hex-colors h1{
     font-size: 1rem;
   }
