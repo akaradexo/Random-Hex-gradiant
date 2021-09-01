@@ -15,9 +15,9 @@ html{
 body {
   /* font-family: 'Barlow', sans-serif; */
   font-family: 'Fraunces', serif;
+  
   background-color: #d9d9d9;
 background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-  
 }
 a{
   text-decoration: none;
@@ -36,7 +36,6 @@ a:active, a:focus {
   min-height: calc(100vh - 3.6rem);
   width: 95%;
   margin: 1.8rem auto;
-  
   box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 .back-btn{
@@ -63,20 +62,26 @@ a:active, a:focus {
   margin: 1rem 0;
 }
 .hex-colors p{
-  display: inline;
+  display: inline-block;;
   margin: 2rem;
   font-size: 1.5rem;
   font-family: 'Barlow', sans-serif;
-  animation: colorchange 5s infinite alternate;
 
 }
-.hex-colors p img{
-  width: 20px;
-  height: 20px;
-  display: inline;
-  margin-left: 0.4rem;
-  cursor: pointer;
+.hex-colors p a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
 }
+.btn-copy {
+  background-color: white!important;
+  width: 6rem;
+}
+
+
 .btn-group{
   display: flex;
 }
