@@ -168,7 +168,9 @@ img{
   top: 5px;
   left: 5px;
 }
-
+.button-54:active, .button-54:focus { 
+  outline: none; 
+ }
 @media (min-width: 768px) {
   .button-54 {
     padding: 0.25em 0.75em;
